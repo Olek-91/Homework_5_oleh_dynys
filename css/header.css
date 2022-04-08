@@ -1,0 +1,20 @@
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 520px;
+    padding: 0 17px;
+    margin: 54px auto 32px;
+}
+nav ul li {
+    list-style: none;
+    font-family: 'Bahij';
+}
+nav ul li a{
+    font-size: 28px;
+    color: #131313;
+    text-decoration: none;
+    transition: .4s ease-out;
+}
+nav ul li a:hover  {
+    color: #2785F7;
+}

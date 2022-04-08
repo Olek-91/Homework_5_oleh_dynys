@@ -1,0 +1,63 @@
+@import url(../css/header.css);
+@import url(../css/fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    max-width: 97.5%;
+    width: 100%;
+    margin: 0 auto 44px;
+    background-color: #EAEBED;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding-bottom: 50px;
+}
+table {
+    margin: 0 auto;
+    width: 97.5%;
+    text-align: center;
+    border-spacing: 0 25px;
+    font-family: 'Bahij';
+    font-size: 26px;
+    
+}
+td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+tr:hover {
+    background-color: #ffff;
+    transition: 1s;
+}
+.td-l {
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+.td-r {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    /* fill: #2785F7; */
+}
+.download-icon {
+    border-radius: 5px;
+    background-color: #ffff;
+    fill: #ffff;
+    width: 30px;
+    height: 30px;
+    transition: 0.5s ease-out;
+}
+.download-icon:hover {
+    background-color: #2785F7;
+   
+}
+/* .td-r svg:hover {
+    .download-icon:hover {
+        background-color: #2785F7;
+        fill: #fff;
+        transition: 0.7s;
+} */
