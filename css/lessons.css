@@ -34,6 +34,10 @@ tr:hover {
     background-color: #ffff;
     transition: 1s;
 }
+td form input {
+    width: 30px;
+    height: 30px;
+}
 .td-l {
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;

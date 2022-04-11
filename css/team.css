@@ -29,13 +29,34 @@ main {
     padding-top: 50px;
     transition: 0.5s;
     border: 1px solid #FEFEFE;
+    position: relative;
 }
 .info-card:hover {
-    border: 1px solid black;
-    
+    display: block;
+    background-color: #2785F7;
+    border: 1px solid #2785F7;
+    cursor: pointer;
+    text-decoration-color: #EAEBED;
+}
+.info-card::after {
+    content: url(../images/trash.svg);
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    height: 50px;
+    left: 90%;
+    top: -25px;
+    font-size: 30px;
+    transition: .5s;
+    display: flex;
+}
+.info-card:hover::after {
+    width: 50px;
+    background-color: white;
+    border-radius: 10px;
 }
 img {
-    border-radius: 45%;
+    border-radius: 50%;
     width: 100px;
     height: 100px;
 }

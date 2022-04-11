@@ -33,14 +33,52 @@ main {
 .menu-icon {
     padding: 14px;
     background-color: transparent;
-    border-radius: 15px;
+    /* border-radius: 15px; */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: relative;
     transition: .4s ease-out;
 }
 .menu-icon:hover {
     background-color: #2785F7;
 }
 .menu-icon:hover svg {
+    display: block;
     fill: #fff;
+}
+.menu-icon.folder::after {
+    content: 'Project';
+}
+.menu-icon.monitor::after {
+    content: 'Account';
+}
+.menu-icon.user::after {
+    content: 'Groups';
+}
+.menu-icon.cloud::after {
+    content: 'Cloud';
+}
+.menu-icon.settings::after {
+    content: 'Setting';
+}
+.menu-icon::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    height: 100%;
+    left: 100%;
+    top: 0;
+    font-size: 30px;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.menu-icon:hover::after {
+    background-color: #2785F7;
+    width: 170%;
 }
 
 .content-info {
