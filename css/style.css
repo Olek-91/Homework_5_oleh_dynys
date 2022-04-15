@@ -19,8 +19,8 @@ section {
     padding-bottom: 50px;
 }
 aside {
-    max-width: 105px;
-    width: 100%;
+    width: 105px;
+    height: 420px;
     background-color: #fff;
     border-radius: 30px;
     margin: 0 15px 0 24px;
@@ -31,6 +31,8 @@ main {
     padding: 0 15px 0 34px;
 }
 .menu-icon {
+    /* display: block; */
+    margin: 10px 0  10px 0;
     padding: 14px;
     background-color: transparent;
     /* border-radius: 15px; */
@@ -78,7 +80,7 @@ main {
 }
 .menu-icon:hover::after {
     background-color: #2785F7;
-    width: 170%;
+    width: 175%;
 }
 
 .content-info {

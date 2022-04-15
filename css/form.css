@@ -1,0 +1,240 @@
+@import url(./fonts.css);
+@import url(./typography.css);
+@import url(./header.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+aside {
+    width: 105px;
+    height: 420px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 0 15px 0 24px;
+    padding: 34px 20px;
+}
+section {
+    max-width: 97.5%;
+    width: 100%;
+    margin: 0 auto 44px;
+    background-color: #EAEBED;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding-bottom: 50px;
+}
+main {
+    width: 100%;
+    padding: 0 15px 0 34px;
+    display: flex;
+}
+.menu-icon {
+    /* display: block; */
+    margin: 10px 0 10px 0;
+    padding: 14px;
+    background-color: transparent;
+    /* border-radius: 15px; */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: relative;
+    transition: .4s ease-out;
+}
+
+.menu-icon:hover {
+    background-color: #2785F7;
+}
+
+.menu-icon:hover svg {
+    display: block;
+    fill: #fff;
+}
+
+.menu-icon.folder::after {
+    content: 'Project';
+}
+
+.menu-icon.monitor::after {
+    content: 'Account';
+}
+
+.menu-icon.user::after {
+    content: 'Groups';
+}
+
+.menu-icon.cloud::after {
+    content: 'Cloud';
+}
+
+.menu-icon.settings::after {
+    content: 'Setting';
+}
+
+.menu-icon::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    height: 100%;
+    left: 100%;
+    top: 0;
+    font-size: 30px;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.menu-icon:hover::after {
+    background-color: #2785F7;
+    width: 175%;
+}
+p {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+
+color: #B1B1B1;
+}
+.left-form {
+    margin: 20px;
+}
+h2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    
+    color: #000000;
+    
+}
+h3 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    
+    color: #000000;
+}
+.gmail {
+    background-color: #fff;
+    width: 100%;
+    min-height: 140px;
+    border-radius: 25px;
+    display: flex;
+}
+.red-a {
+    margin: 35px 35px 35px 47px;
+    background-color: red;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    font-size: 39px;
+    padding: 11px 20px 13px 19px;
+}
+.cont-info {
+    margin: 39px 39px 0 0;
+}
+.ch-passw {
+    display: flex
+}
+.passw {
+    margin-top: 20px;
+    padding: 0 40px 0 47px;
+    background-color: #fff;
+    width: 100%;
+    min-height: 617px;
+    border-radius: 25px;
+}
+.pass-text {
+    margin-top: 27px;
+}
+.pass {
+    margin-top: 16px;
+}
+.pass input{
+    margin-top: 20px;
+    padding: 0 0 0 14px;
+    width: 85%;
+    min-height: 63px;
+    background: #FEFEFE;
+    border: 2px solid #C0C0C0;
+    box-sizing: border-box;
+    border-radius: 21px;
+}
+.company {
+    padding-left: 47px;
+    margin: 20px;
+    background-color: #fff;
+    width: 41.8%;
+    min-height: 780px;
+    border-radius: 25px;
+}
+.comp-fl {
+    display: flex;
+}
+.padlock {
+    margin: 35px 35px 35px 0;
+    width: 65px;
+    min-height: 65px;
+    border-radius: 50%;
+    background-color: #2785F7;
+    padding: 12px;
+}
+.padlock svg {
+    fill: #fff;
+    height: 40px;
+    width: 40px;
+}
+.comp-text {
+    margin: 39px 0 0 0;
+}
+.cont-city-fl {
+    display: flex;
+}
+/* .comp-name {
+    margin:0 0 0 47px;
+} */
+.comp-name input {
+    margin-top: 22px;
+     width: 84%;
+     min-height: 64px;
+     padding: 0 0 0 14px;
+    background: #FEFEFE;
+    border: 2px solid #C0C0C0;
+    box-sizing: border-box;
+    border-radius: 21px;
+}
+.copmp-adres h3 {
+    margin: 22px 0 22px 0;
+}
+.copmp-adres textarea {
+    /* margin: 0 0 0 47px; */
+    padding: 16px 0 0 14px;
+    width: 84%;
+    min-height: 100px;
+    background: #FEFEFE;
+    border: 2px solid #C0C0C0;
+    box-sizing: border-box;
+    border-radius: 21px;
+}
+.location h3 {
+    margin: 22px 12px 22px 0;
+}
+.location input {
+    width: 90%;
+    min-height: 63px;
+    margin: 0 20px 0 0;
+    padding: 0 0 0 14px;
+    background: #FEFEFE;
+    border: 2px solid #C0C0C0;
+    box-sizing: border-box;
+    border-radius: 21px;
+
+}
